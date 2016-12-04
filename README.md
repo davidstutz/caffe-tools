@@ -50,7 +50,7 @@ Some resources I found usefl while working with Caffe:
     * https://github.com/adilmoujahid/deeplearning-cats-dogs-tutorial
     * https://github.com/Franck-Dernoncourt/caffe_demos
     https://github.com/koosyong/caffestudy
-Issues:
+* Issues:
     * https://github.com/BVLC/caffe/issues/3651 (solverstate)
     * https://github.com/BVLC/caffe/issues/1566
     * https://github.com/BVLC/caffe/pull/3082/files (snapshot)

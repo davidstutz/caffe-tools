@@ -85,6 +85,11 @@ class LMDB:
         Read a single element according to the given key. Note that data in an
         LMDB is organized using string keys, which are eight-digit numbers
         when using this class to write and read LMDBs.
+
+        :param key: the key to read
+        :type key: string
+        :return: image, label and corresponding key
+        :rtype: (numpy.ndarray, int, string)
         """
         
         image = False
@@ -109,6 +114,9 @@ class LMDB:
         Read the whole LMDB. The method will return the data and labels (if
         applicable) as dictionary which is indexed by the eight-digit numbers
         stored as strings.
+
+        :return: images, labels and corresponding keys
+        :rtype: ([numpy.ndarray], [int], [string])
         """
         
         images = []

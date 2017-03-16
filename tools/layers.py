@@ -410,4 +410,5 @@ class ManhattenLoss(caffe.Layer):
             else:
                 sign = -1
             
-            bottom[i].diff[...] = (sign * self.diff / bottom[i].num).reshape(bottom[i].diff.shape)
+            # also see the discussion at http://davidstutz.de/pycaffe-tools-examples-and-resources/
+            bottom[i].diff[...] = (sign * self.diff * top[0].diff[0] / bottom[i].num).reshape(bottom[i].diff.shape)
